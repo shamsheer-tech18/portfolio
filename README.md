@@ -1,4 +1,4 @@
-# Shamsheer Hussain Syed — Portfolio
+# Shamsheer Hussain — Portfolio
 
 Personal portfolio website of **Shamsheer Hussain Syed**, a Product Manager with 5+ years in fintech, now applying AI to build better financial products.
 
