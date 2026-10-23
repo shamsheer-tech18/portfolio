@@ -2,7 +2,7 @@
 
 Personal portfolio website of **Shamsheer Hussain Syed**, a Product Manager with 5+ years in fintech, now applying AI to build better financial products.
 
-**Live site:** _add your Netlify or custom-domain address here_
+**Live site:** [shamsheerportfolio.netlify.app](https://shamsheerportfolio.netlify.app)
 
 **Connect:** [LinkedIn](https://www.linkedin.com/in/shamsheerhussainsyed/) · [GitHub](https://github.com/shamsheer-tech18)
 
