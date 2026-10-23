@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shamsheer Hussain Syed</title>
+<meta name="description" content="Shamsheer Hussain Syed: Product Manager with 5+ years in fintech, applying AI to build better financial products. Boston, MA.">
+<meta property="og:title" content="Shamsheer Hussain Syed · Product Manager">
+<meta property="og:description" content="Product Manager with 5+ years in fintech. Shipped features for ICICI Bank's 30M+ user web banking platform. Now applying AI to build better financial products.">
+<meta property="og:image" content="shamsheer.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23162544'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia,serif' font-size='30' fill='%23D8B97A'%3ESH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: banking-statement editorial. Navy hero and contact bands bracket a warm paper body;
+   impact numbers sit in ruled ledger rows; mono labels read like statement references. */
+:root{
+  --navy:#162544; --navy-deep:#0E1830; --navy-line:#2A3A5E;
+  --brass:#B08A4A; --brass-glow:#D8B97A;
+  --on-navy:#F1ECE2; --on-navy-mute:#A9B3C7;
+  --paper:#F4F0E8; --paper-2:#EAE4D8; --surface:#FBF9F4;
+  --ink:#1A2032; --body:#3F4659; --mute:#6E7385; --line:#DCD4C4;
+  --accent:#8C6A2F; /* brass darkened for text on paper */
+  /* Original fonts, to revert: --display Bodoni Moda; --mono JetBrains Mono (see portfolio.bodoni-backup.html) */
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --gutter:clamp(16px,5vw,64px);
+  --max:1180px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#0F1626; --paper-2:#141D31; --surface:#18233A;
+  --ink:#EEE9DF; --body:#C3C8D4; --mute:#8D95A8; --line:#283552;
+  --accent:#D8B97A; --navy-deep:#0A1122; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --paper:#0F1626; --paper-2:#141D31; --surface:#18233A;
+  --ink:#EEE9DF; --body:#C3C8D4; --mute:#8D95A8; --line:#283552;
+  --accent:#D8B97A; --navy-deep:#0A1122; color-scheme:dark }
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--body);font:400 17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--navy-deep)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brass-glow);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);color:var(--ink);font-weight:500;text-wrap:balance;margin:0;line-height:1.08}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(var(--gutter),env(safe-area-inset-left,0px));padding-right:max(var(--gutter),env(safe-area-inset-right,0px))}
+.label{font:600 13px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.label .n{color:var(--mute)}
+em.ac{font-style:italic;color:var(--accent)}
+
+/* ---------- nav ---------- */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--navy-deep) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--navy-line)}
+.top .wrap{display:flex;align-items:center;gap:24px;padding-block:14px}
+.brand{display:inline-flex;align-items:center;gap:12px;font:500 13px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--on-navy);text-decoration:none;white-space:nowrap}
+.brand img{width:38px;height:38px;border-radius:50%;object-fit:cover;object-position:50% 12%;border:1.5px solid var(--brass-glow);display:block}
+.brand:hover{color:var(--brass-glow)}
+.links{display:flex;gap:22px;margin-left:auto;flex-wrap:wrap}
+.links a{font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--on-navy-mute);text-decoration:none}
+.links a:hover{color:var(--brass-glow)}
+.pill{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--on-navy);text-decoration:none;border:1px solid var(--brass);border-radius:99px;padding:9px 14px;white-space:nowrap}
+.pill:hover{background:var(--brass);color:var(--navy-deep)}
+@media (max-width:860px){.links{display:none}.pill{margin-left:auto}}
+
+/* ---------- hero ---------- */
+.hero{background:radial-gradient(1200px 500px at 85% -10%,#22355F 0%,transparent 60%),var(--navy);color:var(--on-navy)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(32px,5vw,72px);align-items:center;padding-block:clamp(48px,8vw,96px) clamp(48px,7vw,84px)}
+.hero .label{color:var(--brass-glow)}
+.hero h1{font-size:clamp(40px,6.2vw,84px);color:var(--on-navy);text-transform:uppercase;letter-spacing:.01em;line-height:.95;margin-top:22px}
+.thesis{font:400 clamp(26px,3.4vw,38px)/1.15 var(--display);color:var(--on-navy);margin-top:28px;max-width:23ch}
+.thesis em{color:var(--brass-glow)}
+.lede{color:var(--on-navy-mute);max-width:52ch;margin-top:20px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 15px/1 var(--sans);text-decoration:none;padding:14px 20px;border-radius:99px;border:1px solid transparent;cursor:pointer}
+.btn.solid{background:var(--brass-glow);color:var(--navy-deep)}
+.btn.solid:hover{background:#E6CC96}
+.btn.ghost{border-color:var(--navy-line);color:var(--on-navy)}
+.btn.ghost:hover{border-color:var(--brass-glow)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:34px;font:500 11px/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--on-navy-mute)}
+.facts .open{color:var(--brass-glow);display:inline-flex;align-items:center;gap:8px}
+.facts .open::before{content:"";width:7px;height:7px;border-radius:50%;background:#7FD1A0;box-shadow:0 0 0 4px rgba(127,209,160,.18)}
+.portrait{position:relative;margin:0;max-width:440px;justify-self:end;width:100%}
+.portrait img{display:block;width:100%;aspect-ratio:747/900;object-fit:cover;border-radius:6px;border:1px solid var(--navy-line)}
+.portrait::before{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--brass);border-radius:6px;z-index:-1}
+.portrait{isolation:isolate}
+.portrait figcaption{position:absolute;left:-22px;bottom:28px;background:var(--paper);color:var(--ink);border-radius:6px;padding:14px 16px;box-shadow:0 18px 40px -18px rgba(0,0,0,.6);max-width:250px}
+.portrait figcaption b{display:block;font:500 26px/1 var(--display);color:var(--ink)}
+.portrait figcaption span{display:block;font:500 10.5px/1.45 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-top:6px}
+@media (max-width:860px){
+  .hero .wrap{grid-template-columns:1fr}
+  .portrait{justify-self:start;max-width:300px;margin-right:14px}
+  .portrait figcaption{left:12px}
+}
+.rise{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.rise.d2{animation-delay:.08s}.rise.d3{animation-delay:.16s}.rise.d4{animation-delay:.24s}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+
+/* hero fits one screen on desktop: sizes follow the window height, photo shows in full */
+html{scroll-padding-top:calc(67px + env(safe-area-inset-top,0px))}
+@media (min-width:861px){
+  .hero{display:flex;min-height:calc(100svh - 67px - env(safe-area-inset-top,0px))}
+  .hero .wrap{width:100%;grid-template-columns:minmax(0,1fr) auto;padding-block:clamp(20px,4vh,48px)}
+  .hero .wrap > div:first-child{container-type:inline-size}
+  .hero h1{font-size:clamp(40px,min(10.5vh,14cqw),84px);margin-top:clamp(10px,2vh,22px)}
+  .thesis{font-size:clamp(24px,min(3.4vw,4.6vh),38px);margin-top:clamp(12px,2.6vh,28px);max-width:26ch}
+  .lede{margin-top:clamp(10px,2vh,20px);font-size:clamp(15px,2.2vh,17px)}
+  .ctas{margin-top:clamp(16px,3vh,30px)}
+  .facts{margin-top:clamp(16px,3.2vh,34px)}
+  .portrait{width:auto;max-width:none;justify-self:end}
+  .portrait img{width:auto;max-width:none;height:clamp(320px,calc(100svh - 67px - 2*clamp(20px,4vh,48px) - 28px),640px)}
+}
+
+/* ---------- strip ---------- */
+.strip{background:var(--navy-deep);color:var(--on-navy-mute);border-top:1px solid var(--navy-line)}
+.strip .wrap{display:flex;align-items:center;flex-wrap:wrap;gap:12px 38px;padding-block:22px}
+.strip .label{color:var(--on-navy-mute)}
+.strip .chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{height:52px;padding:8px 16px;border-radius:8px;background:#FFFFFF;display:flex;align-items:center;justify-content:center}
+.chip img{display:block;height:100%;width:auto;max-width:150px;object-fit:contain}
+.chip.tall{padding:5px 12px}
+/* logo tile shared by experience rows and education */
+.logo-tile{background:#FFFFFF;border:1px solid var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;padding:7px}
+.logo-tile img{display:block;max-width:100%;max-height:100%;object-fit:contain}
+
+/* ---------- sections ---------- */
+.sec{padding-block:clamp(72px,10vw,128px)}
+.sec.alt{background:var(--paper-2)}
+.head{display:grid;grid-template-columns:1fr minmax(0,340px);gap:24px 48px;align-items:end;margin-bottom:clamp(36px,5vw,56px)}
+.head h2{font-size:clamp(40px,5.6vw,68px);margin-top:16px}
+.head p{color:var(--mute);font-size:16px}
+@media (max-width:760px){.head{grid-template-columns:1fr}}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(32px,6vw,80px)}
+.about-copy{display:grid;gap:18px;max-width:62ch}
+.about-copy p:first-child{font:400 22px/1.45 var(--display);color:var(--ink)}
+.pull{font:italic 400 clamp(26px,3vw,34px)/1.2 var(--display);color:var(--accent);border-left:2px solid var(--brass);padding-left:20px;margin-top:10px}
+.ledger{border-top:2px solid var(--ink);align-self:start}
+.ledger-row{display:grid;grid-template-columns:clamp(118px,11vw,150px) minmax(0,1fr);gap:4px 20px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.ledger-row b{font:500 clamp(34px,3.6vw,44px)/1 var(--display);color:var(--ink);font-variant-numeric:tabular-nums}
+.ledger-row span{font-size:15px;color:var(--body)}
+.ledger-foot{font:500 11px/1.5 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute);padding-top:12px}
+@media (max-width:860px){.about-grid{grid-template-columns:1fr}}
+
+/* skills */
+.search{display:flex;flex-direction:column;gap:8px;max-width:360px;margin-bottom:30px}
+.search label{font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.search input{font:400 16px/1 var(--sans);color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--ink);padding:10px 0;outline:none}
+.search input:focus{border-bottom-color:var(--brass)}
+.search input::placeholder{color:var(--mute)}
+.sk-row{display:grid;grid-template-columns:220px minmax(0,1fr);gap:12px 32px;padding:20px 0;border-top:1px solid var(--line)}
+.sk-row h3{font-size:22px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font:500 13px/1 var(--sans);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:99px;padding:8px 13px}
+.tag.hit{background:var(--brass-glow);border-color:var(--brass);color:#1A2032}
+.sk-empty{color:var(--mute);padding:20px 0;border-top:1px solid var(--line)}
+@media (max-width:700px){.sk-row{grid-template-columns:1fr}}
+
+/* experience */
+.role{border-top:1px solid var(--line)}
+.role:last-of-type{border-bottom:1px solid var(--line)}
+.role-btn{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:grid;grid-template-columns:150px 84px minmax(0,1fr) 36px;gap:18px;align-items:center;padding:24px 0}
+.role-btn:focus-visible{outline:2px solid var(--brass);outline-offset:4px}
+.when{font:500 11px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.mono{width:84px;height:52px;border-radius:8px;display:grid;place-items:center;font:500 15px/1 var(--display);color:var(--brass-glow);background:var(--navy);border:1px solid var(--navy-line)}
+.role-btn .logo-tile{width:84px;height:52px}
+.who h3{font-size:clamp(24px,3vw,32px)}
+.who p{font-size:14.5px;color:var(--mute);margin-top:4px}
+.who p i{font-style:normal;color:var(--accent)}
+.plus{position:relative;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);color:var(--ink);font-size:0;line-height:0;transition:transform .25s,background .2s,border-color .2s,color .2s}
+.plus::before,.plus::after{content:"";position:absolute;top:50%;left:50%;width:14px;height:1.5px;background:currentColor;border-radius:1px;transform:translate(-50%,-50%)}
+.plus::after{transform:translate(-50%,-50%) rotate(90deg)}
+[aria-expanded="true"] > .plus{transform:rotate(45deg);background:var(--navy);color:var(--brass-glow);border-color:var(--navy)}
+button:hover > .plus,button:focus-visible > .plus,[aria-expanded="true"]:hover > .plus{background:var(--brass-glow);border-color:var(--brass);color:#0E1830}
+.role-body{padding:0 0 34px calc(150px + 84px + 36px)}
+.role-body .tags{margin-bottom:18px}
+.role-body .tag{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:7px 10px;color:var(--accent);background:transparent;border-color:var(--brass)}
+.pa{display:grid;gap:14px;max-width:66ch}
+.pa strong{color:var(--ink)}
+.pa ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.impact{margin-top:24px}
+.impact-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);border-radius:6px;background:var(--surface);margin-top:10px}
+.impact-grid div{padding:18px;border-left:1px solid var(--line)}
+.impact-grid div:first-child{border-left:0}
+.impact-grid b{display:block;font:500 34px/1 var(--display);color:var(--ink);font-variant-numeric:tabular-nums}
+.impact-grid span{display:block;font-size:13px;line-height:1.4;color:var(--mute);margin-top:8px}
+@media (max-width:860px){
+  .role-btn{grid-template-columns:84px minmax(0,1fr) 36px}
+  .role-btn .when{grid-column:1/-1;order:-1;margin-bottom:-8px}
+  .role-body{padding-left:0}
+  .impact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .impact-grid div:nth-child(3){border-left:0}
+  .impact-grid div:nth-child(n+3){border-top:1px solid var(--line)}
+}
+.edu{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:48px}
+.edu div{border-top:2px solid var(--ink);padding-top:16px}
+.edu h3{font-size:24px}
+.edu > div{display:grid;grid-template-columns:64px minmax(0,1fr);column-gap:16px;align-items:start}
+.edu > div > *{grid-column:2}
+.edu .logo-tile{grid-column:1;grid-row:1 / span 3;width:64px;height:64px;padding:6px}
+.edu p{font-size:14.5px;color:var(--mute);margin-top:6px}
+@media (max-width:700px){.edu{grid-template-columns:1fr}}
+
+/* how I think */
+.qa{border-top:1px solid var(--line)}
+.qa:last-child{border-bottom:1px solid var(--line)}
+.qa button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:24px 0;font:400 clamp(21px,2.4vw,28px)/1.25 var(--display);color:var(--ink)}
+.qa button:focus-visible{outline:2px solid var(--brass);outline-offset:4px}
+.qa .ans{padding:0 0 28px;max-width:68ch}
+
+/* projects */
+.projects{background:var(--navy);color:var(--on-navy-mute)}
+.projects h2,.projects h3{color:var(--on-navy)}
+.projects .label{color:var(--brass-glow)}
+.projects .head p{color:var(--on-navy-mute)}
+.proj{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,64px);padding:clamp(36px,5vw,56px) 0;border-top:1px solid var(--navy-line)}
+.proj .idx{font:500 12px/1 var(--mono);letter-spacing:.14em;color:var(--brass-glow);text-transform:uppercase}
+.proj h3{font-size:clamp(30px,3.6vw,44px);margin-top:14px}
+.proj h3 + p{margin-top:14px;color:var(--on-navy);font-size:18px}
+.meta{display:grid;gap:18px;margin-top:24px}
+.meta h4{margin:0 0 8px;font:500 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--on-navy-mute)}
+.meta .tags .tag{background:transparent;border-color:var(--navy-line);color:var(--on-navy)}
+.flow{align-self:center;background:var(--navy-deep);border:1px solid var(--navy-line);border-radius:8px;padding:clamp(20px,3vw,32px);display:grid;gap:10px}
+.flow .step{display:grid;grid-template-columns:28px minmax(0,1fr);gap:14px;align-items:start;padding:12px 14px;border:1px solid var(--navy-line);border-radius:6px;background:var(--navy)}
+.flow .step i{font:500 11px/28px var(--mono);font-style:normal;color:var(--brass-glow);text-align:center;border:1px solid var(--brass);border-radius:50%;height:28px}
+.flow .step b{display:block;color:var(--on-navy);font-weight:600;font-size:15px}
+.flow .step span{font-size:13.5px;line-height:1.45}
+.flow .fan{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding-left:42px}
+.flow .fan span{font:500 11px/1.3 var(--mono);letter-spacing:.06em;text-align:center;padding:9px 6px;border:1px dashed var(--brass);border-radius:6px;color:var(--brass-glow)}
+.flow .arrow{height:12px;margin-left:27px;border-left:1px dashed var(--brass)}
+.flow .result{font:500 12px/1.5 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--brass-glow);border-top:1px solid var(--navy-line);padding-top:14px;margin-top:4px}
+@media (max-width:860px){.proj{grid-template-columns:1fr}}
+
+/* beyond */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:clamp(22px,3vw,32px);display:grid;gap:12px;align-content:start}
+.card.feature{grid-column:1/-1;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px 48px;background:var(--navy);border-color:var(--navy);color:var(--on-navy-mute)}
+.card.feature h3{color:var(--on-navy)}
+.card.feature .label{color:var(--brass-glow)}
+.card h3{font-size:clamp(24px,2.6vw,30px)}
+.nums{display:flex;flex-wrap:wrap;gap:28px;align-self:end}
+.nums b{display:block;font:500 40px/1 var(--display);color:var(--brass-glow)}
+.nums span{font-size:13px}
+@media (max-width:760px){.cards,.card.feature{grid-template-columns:1fr}}
+
+/* contact */
+.contact{background:var(--navy);color:var(--on-navy)}
+.contact .wrap{padding-block:clamp(72px,10vw,120px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(32px,6vw,96px);align-items:end}
+.c-right{display:grid;gap:22px;align-content:end}
+.c-links{display:flex;flex-wrap:wrap;gap:14px 30px}
+.c-links a{font:600 13px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--on-navy);text-decoration:none;padding-bottom:7px;border-bottom:1px solid var(--brass)}
+.c-links a:hover{color:var(--brass-glow);border-bottom-color:var(--brass-glow)}
+@media (max-width:860px){.contact .wrap{grid-template-columns:1fr;align-items:start}}
+.contact .label{color:var(--brass-glow)}
+.contact h2{color:var(--on-navy);font-size:clamp(44px,7vw,92px);max-width:14ch}
+.contact h2 em{color:var(--brass-glow)}
+.mail{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.mail code{font:400 clamp(15px,1.6vw,20px)/1.2 var(--display);color:var(--on-navy);user-select:all;overflow-wrap:anywhere}
+.copy{font:500 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;background:transparent;color:var(--brass-glow);border:1px solid var(--brass);border-radius:99px;padding:9px 14px;cursor:pointer}
+.copy:hover{background:var(--brass);color:var(--navy-deep)}
+.outs{display:flex;flex-wrap:wrap;gap:12px}
+footer{background:var(--navy-deep);color:var(--on-navy-mute);font:500 11px/1.6 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:26px}
+</style>
+</head>
+<body>
+
+<nav class="top" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Shamsheer, back to top"><img src="shamsheer.jpg" alt="" width="38" height="38">Shamsheer</a>
+    <div class="links">
+      <a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#thinking">How I think</a><a href="#projects">Projects</a><a href="#beyond">Beyond</a><a href="#contact">Contact</a>
+    </div>
+    <a class="pill" href="https://www.linkedin.com/in/shamsheerhussainsyed/" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="label rise">// Product Manager · Builder · Leader · Storyteller</p>
+      <h1 class="rise d2">Shamsheer</h1>
+      <p class="thesis rise d3">I build products that earn people's <em>trust</em>. Now I'm learning to build them <em>with AI</em>.</p>
+      <p class="lede rise d4">5+ years building banking and payments products used by millions. Now exploring what AI can make possible, with human judgment at the center.</p>
+      <div class="ctas rise d4">
+        <a class="btn solid" href="#experience">See my work</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+      <div class="facts rise d4">
+        <span class="open">Open to product roles in USA</span>
+      </div>
+    </div>
+    <figure class="portrait rise d3">
+      <img src="shamsheer.jpg" alt="Portrait of Shamsheer Hussain Syed in a navy blazer" width="747" height="900">
+    </figure>
+  </div>
+</header>
+
+<div class="strip" aria-label="Where I've worked">
+  <div class="wrap">
+    <span class="label">Where I've worked</span>
+    <div class="chips">
+      <span class="chip"><img src="logos/icici.png" alt="ICICI Bank"></span>
+      <span class="chip"><img src="logos/wipro.png" alt="Wipro"></span>
+      <span class="chip"><img src="logos/nordea.png" alt="Nordea"></span>
+      <span class="chip"><img src="logos/tcs.png" alt="Tata Consultancy Services"></span>
+      <span class="chip tall"><img src="logos/northeastern.png" alt="Northeastern University"></span>
+    </div>
+  </div>
+</div>
+
+<main>
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="head"><div><p class="label">About</p><h2>From writing the code to <em class="ac">owning the roadmap</em>.</h2></div></div>
+    <div class="about-grid">
+      <div class="about-copy">
+        <p>I’m a Product Manager with over 5 years in technology. I started as an engineer and grew into product ownership on banking platforms for ICICI Bank and Nordea Bank.</p>
+        <p>At ICICI, I owned five core modules of a web banking platform used by 30M+ customers. I worked with engineering, UX and business teams to redesign key journeys and launch features like Smart Lock, which cut fraud cases by 30%. At Nordea, I turned tax regulations into product requirements and learned that in financial services, a requirement is a promise to a regulator and to a customer.</p>
+        <p>Now I’m finishing my MS at Northeastern University in Boston and building with AI. My latest project is PM Copilot, a multi-agent assistant that turns one product idea into a PRD in under 90 seconds. I’m looking for Product Manager roles in tech and fintech, where scale, security and user trust matter.</p>
+        <p class="pull">I know how things get built, so I make product decisions that engineers can actually ship.</p>
+      </div>
+      <div class="ledger" aria-label="Career in numbers">
+        <div class="ledger-row"><b>30M+</b><span>users on the ICICI Bank web banking platform I helped run</span></div>
+        <div class="ledger-row"><b>30%</b><span>fewer fraud cases after launching Smart Lock</span></div>
+        <div class="ledger-row"><b>15%</b><span>lift in feature adoption</span></div>
+        <div class="ledger-row"><b>45%</b><span>less rework on developed activity</span></div>
+        <div class="ledger-row"><b>300K+</b><span>Smart Checkout transactions</span></div>
+        <div class="ledger-row"><b>80K+</b><span>users on DigiLocker renewals</span></div>
+        <div class="ledger-row"><b>30K+</b><span>deposits enabled during outages</span></div>
+        <p class="ledger-foot">Shamsheer Hussain Syed · Boston, MA</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="skills">
+  <div class="wrap">
+    <div class="head"><div><p class="label">Skills</p><h2>The toolkit behind the work.</h2></div><p>Product craft first, with enough engineering to have real conversations about trade-offs.</p></div>
+    <div class="search"><label for="sk-q">Search skills and tools</label><input id="sk-q" type="search" placeholder="Try “RAG” or “Jira”" autocomplete="off"></div>
+    <div id="sk-list">
+      <div class="sk-row"><h3>Product Strategy</h3><div class="tags"><span class="tag">Product Strategy</span><span class="tag">Product Roadmap</span><span class="tag">Go-To-Market Strategy</span><span class="tag">MVP Definition</span><span class="tag">Market Sizing (TAM/SAM/SOM)</span><span class="tag">KPIs &amp; Success Metrics</span></div></div>
+      <div class="sk-row"><h3>Discovery &amp; Design</h3><div class="tags"><span class="tag">User Research</span><span class="tag">Customer Interviews</span><span class="tag">Design Thinking</span><span class="tag">UI/UX Design</span><span class="tag">Wireframing</span><span class="tag">Figma</span></div></div>
+      <div class="sk-row"><h3>Delivery</h3><div class="tags"><span class="tag">PRDs</span><span class="tag">BRDs</span><span class="tag">User Stories</span><span class="tag">Functional Specifications</span><span class="tag">Sprint Planning</span><span class="tag">Agile / Scrum</span><span class="tag">UAT</span><span class="tag">Technical Trade-Offs</span></div></div>
+      <div class="sk-row"><h3>Leadership</h3><div class="tags"><span class="tag">Stakeholder Management</span><span class="tag">Cross-Functional Collaboration</span><span class="tag">Executive Presentation</span><span class="tag">Mentoring</span></div></div>
+      <div class="sk-row"><h3>AI &amp; GenAI</h3><div class="tags"><span class="tag">Generative AI</span><span class="tag">LLM Applications</span><span class="tag">Multi-Agent Systems</span><span class="tag">RAG Pipelines</span><span class="tag">LangChain</span><span class="tag">Prompt Engineering</span><span class="tag">Streamlit</span></div></div>
+      <div class="sk-row"><h3>Fintech Domain</h3><div class="tags"><span class="tag">Retail Internet Banking</span><span class="tag">Fraud Prevention</span><span class="tag">UPI Payments</span><span class="tag">FATCA / CRS Compliance</span><span class="tag">Fixed Deposits</span><span class="tag">DigiLocker</span></div></div>
+      <div class="sk-row"><h3>Technical</h3><div class="tags"><span class="tag">SQL</span><span class="tag">REST APIs</span><span class="tag">Microservices</span><span class="tag">Jenkins</span><span class="tag">Docker</span><span class="tag">CI/CD</span></div></div>
+      <div class="sk-row"><h3>Tools</h3><div class="tags"><span class="tag">Jira</span><span class="tag">Confluence</span><span class="tag">Postman</span><span class="tag">Dynatrace</span><span class="tag">Splunk</span><span class="tag">ELK</span><span class="tag">ServiceNow</span></div></div>
+      <div class="sk-row"><h3>Certifications</h3><div class="tags"><span class="tag">Generative AI for Product Managers</span><span class="tag">Agile with Atlassian Jira</span><span class="tag">PM: Building a Product Roadmap</span></div></div>
+      <p class="sk-empty" id="sk-empty" hidden>No match yet. Ask me about it anyway.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="experience">
+  <div class="wrap">
+    <div class="head"><div><p class="label">Experience</p><h2>Where I've worked.</h2></div><p>Open any role to see the problem, my approach and the impact.</p></div>
+
+    <div class="role">
+      <button class="role-btn" aria-expanded="true" aria-controls="r1">
+        <span class="when">May 2022 – Jan 2025</span><span class="logo-tile"><img src="logos/icici.png" alt="ICICI Bank"></span>
+        <span class="who"><h3>ICICI Bank</h3><p>Product Owner · Retail Internet Banking · <i>via Wipro Limited, Hyderabad</i></p></span>
+        <span class="plus" aria-hidden="true">+</span>
+      </button>
+      <div class="role-body" id="r1">
+        <div class="tags"><span class="tag">Journey Redesign</span><span class="tag">Product Ownership</span><span class="tag">Stakeholder Management</span></div>
+        <div class="pa">
+          <p><strong>The problem.</strong> ICICI Bank's retail internet banking platform serves 30M+ customers. Five of its core modules needed a single owner to turn business goals into a clear, prioritized backlog, while customers stayed exposed to phishing, UPI fraud and service outages.</p>
+          <p><strong>My approach.</strong> As sole Product Owner, I led a 19-member technical team and worked with UX, engineering and business stakeholders.</p>
+          <ul>
+            <li>Turned business goals into 150+ prioritized user stories with clear acceptance criteria.</li>
+            <li>Redesigned 5 core banking journeys with UX and engineering.</li>
+            <li>Launched <strong>Smart Lock</strong>, a fraud-prevention feature used by 15K+ customers a month.</li>
+            <li>Built a downtime fallback so customers could still open fixed deposits during outages.</li>
+            <li>Launched DigiLocker locker renewals and Smart Checkout.</li>
+          </ul>
+        </div>
+        <div class="impact">
+          <p class="label">Impact</p>
+          <div class="impact-grid">
+            <div><b>30%</b><span>fewer unauthorized-access, phishing and UPI fraud cases</span></div>
+            <div><b>15%</b><span>higher feature adoption, adding to 6% revenue growth in 2 months</span></div>
+            <div><b>30K+</b><span>fixed deposits opened through the outage fallback</span></div>
+            <div><b>45%</b><span>less rework, with 90% of releases defect-free</span></div>
+          </div>
+          <p style="margin-top:16px">DigiLocker locker renewals reached 80K+ users at 40% adoption, and Smart Checkout processed 300K+ transactions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="role">
+      <button class="role-btn" aria-expanded="false" aria-controls="r2">
+        <span class="when">Sep 2020 – Feb 2022</span><span class="logo-tile"><img src="logos/nordea.png" alt="Nordea"></span>
+        <span class="who"><h3>Nordea Bank</h3><p>IT Business Analyst · FATCA/CRS Tax Compliance · <i>via Tata Consultancy Services, Bangalore</i></p></span>
+        <span class="plus" aria-hidden="true">+</span>
+      </button>
+      <div class="role-body" id="r2" hidden>
+        <div class="tags"><span class="tag">RCA</span><span class="tag">UAT</span><span class="tag">Requirement Analysis</span><span class="tag">Regulatory Compliance</span></div>
+        <div class="pa">
+          <p><strong>The problem.</strong> Nordea's customer compliance platform had to apply FATCA and CRS tax rules correctly: self-certification, TIN checks and flagging reportable accounts. A mistake there is a regulatory risk.</p>
+          <p><strong>My approach.</strong></p>
+          <ul>
+            <li>Translated 50+ FATCA/CRS business requirements into technical user stories with stakeholders.</li>
+            <li>Delivered 25+ enhancements to tax validation logic.</li>
+            <li>Defined acceptance criteria, designed test scenarios and ran UAT for compliance rule changes.</li>
+            <li>Led root-cause analysis on issues and shipped patches through a Jenkins/Docker CI/CD pipeline.</li>
+            <li>Presented application health and performance reports that shaped release timing and fix priorities.</li>
+          </ul>
+        </div>
+        <div class="impact">
+          <p class="label">Impact</p>
+          <div class="impact-grid">
+            <div><b>50+</b><span>regulatory requirements turned into user stories</span></div>
+            <div><b>25+</b><span>tax validation enhancements delivered</span></div>
+            <div><b>100+</b><span>defects closed across SIT and UAT</span></div>
+            <div><b>0</b><span>critical defects in production</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="role">
+      <button class="role-btn" aria-expanded="false" aria-controls="r3">
+        <span class="when">Sep 2019 – Aug 2020</span><span class="logo-tile"><img src="logos/tcs.png" alt="Tata Consultancy Services"></span>
+        <span class="who"><h3>Tata Consultancy Services</h3><p>System Engineer · Cloud Data Migration to Azure</p></span>
+        <span class="plus" aria-hidden="true">+</span>
+      </button>
+      <div class="role-body" id="r3" hidden>
+        <div class="tags"><span class="tag">Azure AD</span><span class="tag">JIRA</span><span class="tag">Data Migration</span><span class="tag">Cross Functional Collaboration</span></div>
+        <div class="pa">
+          <p><strong>The problem.</strong> 400K+ employee records had to move from legacy databases to Azure SQL in the cloud without losing a single record or taking systems offline.</p>
+          <p><strong>My approach.</strong></p>
+          <ul>
+            <li>Built and tested migration scripts in Azure Database Migration Service.</li>
+            <li>Flagged 10+ requirement gaps and worked with business analysts to update them in Jira, keeping every phase on schedule.</li>
+            <li>Coordinated 4 teams for zero-downtime releases.</li>
+          </ul>
+        </div>
+        <div class="impact">
+          <p class="label">Impact</p>
+          <div class="impact-grid">
+            <div><b>400K+</b><span>employee records migrated to the cloud</span></div>
+            <div><b>100%</b><span>data integrity</span></div>
+            <div><b>20%</b><span>lower infrastructure costs from the improved release process</span></div>
+            <div><b>4</b><span>teams coordinated for zero-downtime releases</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="edu">
+      <div><span class="logo-tile"><img src="logos/northeastern.png" alt="Northeastern University"></span><h3>MS, Engineering Management</h3><p>(Digital Product Management Concentration)</p><p>Northeastern University, Boston, USA</p></div>
+      <div><span class="logo-tile"><img src="logos/jntu.png" alt="Jawaharlal Nehru Technological University"></span><h3>B.Tech, Mechanical Engineering</h3><p>RGM College of Engineering, JNTU, Kurnool, India</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec alt" id="thinking">
+  <div class="wrap">
+    <div class="head"><div><p class="label">How I think</p><h2>How I make product decisions.</h2></div><p>Answers to questions I'm often asked, so you know how I work before we talk.</p></div>
+    <div class="qas">
+      <div class="qa"><button aria-expanded="false" aria-controls="q1">How do you decide what goes into the next release?<span class="plus" aria-hidden="true">+</span></button>
+        <div class="ans" id="q1" hidden><p>I start from the business goal and the customer problem, then work out what it costs to build. With 150+ stories in a backlog, everything looks important. So I ask what moves the metric we agreed on, what carries risk if we wait (in banking, that's usually fraud or compliance), and what the team can actually ship well. Then I say no, clearly, to the rest and explain why.</p></div></div>
+      <div class="qa"><button aria-expanded="false" aria-controls="q2">How does your engineering background help you as a PM?<span class="plus" aria-hidden="true">+</span></button>
+        <div class="ans" id="q2" hidden><p>I've written migration scripts and shipped patches through CI/CD, so I can talk trade-offs with engineers in their terms. I write acceptance criteria that testers can use without asking me what I meant. That's a big part of why rework dropped 45% on the ICICI modules I owned.</p></div></div>
+      <div class="qa"><button aria-expanded="false" aria-controls="q3">How do you balance security with a smooth customer experience?<span class="plus" aria-hidden="true">+</span></button>
+        <div class="ans" id="q3" hidden><p>I treat them as one problem. Smart Lock is my example: customers got a simple way to lock access to their own account, and fraud cases fell 30%. When outages blocked fixed deposits, we built a fallback instead of showing an error page, and 30K+ deposits went through. Trust comes from protection that's easy to use.</p></div></div>
+      <div class="qa"><button aria-expanded="false" aria-controls="q4">Where does AI fit in the products you want to build?<span class="plus" aria-hidden="true">+</span></button>
+        <div class="ans" id="q4" hidden><p>Where it removes slow, repetitive work and a person still makes the decision that matters. I built PM Copilot to test this on my own job: it drafts a PRD, market sizing, user stories and risks in under 90 seconds, and I refine them. In fintech, I'd apply the same idea to fraud review, customer service and compliance checks.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec projects" id="projects">
+  <div class="wrap">
+    <div class="head"><div><p class="label">Projects</p><h2>Building with AI, starting from a real problem.</h2></div><p>Two independent projects: one GenAI product I built and deployed, and one product strategy built from customer interviews.</p></div>
+
+    <article class="proj">
+      <div>
+        <p class="idx">01 · GenAI product · Multi-agent</p>
+        <h3>PM Copilot</h3>
+        <p>A multi-agent AI assistant that turns one product description into a full product package in under 90 seconds.</p>
+        <div class="meta">
+          <div><h4>Use case</h4><p>Product managers who need a fast first draft of a PRD, market sizing, user stories and a risk assessment, then refine it in a live chat.</p></div>
+          <div><h4>Tech stack</h4><div class="tags"><span class="tag">LangChain</span><span class="tag">GPT-4o</span><span class="tag">Gemini</span><span class="tag">Llama 3.3 via Groq</span><span class="tag">Streamlit Cloud</span></div></div>
+        </div>
+      </div>
+      <div class="flow" aria-label="How PM Copilot works">
+        <div class="step"><i>1</i><div><b>Product description</b><span>One prompt describing the idea</span></div></div>
+        <div class="arrow"></div>
+        <div class="step"><i>2</i><div><b>Agents work in parallel</b><span>Three LLMs, each with a role</span></div></div>
+        <div class="fan"><span>GPT-4o</span><span>Gemini</span><span>Llama 3.3</span></div>
+        <div class="arrow"></div>
+        <div class="step"><i>3</i><div><b>Product package</b><span>PRD · market sizing · user stories · risk assessment</span></div></div>
+        <div class="arrow"></div>
+        <div class="step"><i>4</i><div><b>Refine in chat</b><span>Ask follow-ups and edit the output live</span></div></div>
+        <p class="result">Under 90 seconds, end to end</p>
+      </div>
+    </article>
+
+    <article class="proj">
+      <div>
+        <p class="idx">02 · Product strategy · User research</p>
+        <h3>ChowPal</h3>
+        <p>A community cooking and grocery marketplace that helps students find the ingredients they grew up with.</p>
+        <div class="meta">
+          <div><h4>Use case</h4><p>International students who can't find cultural ingredients nearby, and local grocers who want to reach them.</p></div>
+          <div><h4>Deliverables</h4><div class="tags"><span class="tag">PRD</span><span class="tag">Personas</span><span class="tag">15 user stories</span><span class="tag">4-quarter roadmap</span><span class="tag">Year 1 financial model</span></div></div>
+        </div>
+      </div>
+      <div class="flow" aria-label="How ChowPal was built">
+        <div class="step"><i>1</i><div><b>25 customer interviews</b><span>15 students and 10 grocers</span></div></div>
+        <div class="arrow"></div>
+        <div class="step"><i>2</i><div><b>The insight</b><span>13 of 15 students struggled to find cultural ingredients</span></div></div>
+        <div class="arrow"></div>
+        <div class="step"><i>3</i><div><b>Sizing the market</b><span>$260M TAM, with $850K in Year 1 costs</span></div></div>
+        <div class="arrow"></div>
+        <div class="step"><i>4</i><div><b>Plan to build</b><span>Personas, user stories and a 4-quarter roadmap</span></div></div>
+        <p class="result">From interviews to a full product package</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="sec" id="beyond">
+  <div class="wrap">
+    <div class="head"><div><p class="label">Beyond the resume</p><h2>There's more to the story.</h2></div></div>
+    <div class="cards">
+      <article class="card feature">
+        <div style="display:grid;gap:12px"><p class="label">Leadership · Northeastern University</p><h3>Product Conference 2.0</h3><p>As a Product Manager in the Aspiring Product Managers Club, I co-led Product Conference 2.0. I helped shape its theme and multi-track agenda and hosted industry leaders for a day of product conversations.</p></div>
+        <div class="nums"><div><b>300+</b><span>attendees</span></div><div><b>35</b><span>industry leaders hosted</span></div></div>
+      </article>
+      <article class="card"><p class="label">Mentoring</p><h3>Paying it forward</h3><p>I led the club's Mentor vertical: 8 sessions for 25 students learning how to break into product management.</p></article>
+      <article class="card"><p class="label">Starting over</p><h3>Hyderabad to Boston</h3><p>After five years in India's banking tech, I moved to Boston to study product management full-time. Rebuilding a network from scratch taught me to start conversations first, which is why this site exists.</p></article>
+    </div>
+  </div>
+</section>
+</main>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Good products start with the <em>right question</em>.</h2>
+    <div class="c-right">
+      <p class="label">Let's talk product, fintech or AI</p>
+      <div class="mail"><code id="email">shamsheerhussain.syed@gmail.com</code><button class="copy" id="copy" type="button">Copy</button></div>
+      <div class="c-links">
+        <a href="https://www.linkedin.com/in/shamsheerhussainsyed/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="https://github.com/shamsheer-tech18" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="Shamsheer_Hussain_Syed_Resume.pdf" target="_blank" rel="noopener">Resume ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer><div class="wrap"><span>© 2026 Shamsheer Hussain Syed</span><span>Boston, MA · Product Manager</span></div></footer>
+
+<script>
+// Always open at the top, including after a reload or when a link carries a #section.
+try{history.scrollRestoration='manual'}catch(e){}
+try{if(location.hash)history.replaceState(null,'',location.pathname+location.search)}catch(e){}
+window.scrollTo(0,0);
+addEventListener('pageshow',e=>{if(e.persisted)window.scrollTo(0,0)});
+
+// Accordions: experience roles and Q&A share one toggle.
+document.querySelectorAll('[aria-controls]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const open=btn.getAttribute('aria-expanded')==='true';
+    btn.setAttribute('aria-expanded',String(!open));
+    document.getElementById(btn.getAttribute('aria-controls')).hidden=open;
+  });
+});
+// Skills search
+const q=document.getElementById('sk-q'),rows=[...document.querySelectorAll('.sk-row')],empty=document.getElementById('sk-empty');
+q.addEventListener('input',()=>{
+  const t=q.value.trim().toLowerCase();let any=false;
+  rows.forEach(r=>{
+    let hit=false;
+    r.querySelectorAll('.tag').forEach(tag=>{const m=t&&tag.textContent.toLowerCase().includes(t);tag.classList.toggle('hit',!!m);if(m)hit=true});
+    const show=!t||hit||r.querySelector('h3').textContent.toLowerCase().includes(t);
+    r.hidden=!show;if(show)any=true;
+  });
+  empty.hidden=any;
+});
+
+// Copy email
+const copy=document.getElementById('copy');
+copy.addEventListener('click',()=>{
+  const text=document.getElementById('email').textContent;
+  const done=()=>{copy.textContent='Copied';setTimeout(()=>copy.textContent='Copy',1800)};
+  try{navigator.clipboard.writeText(text).then(done,()=>selectEmail())}catch(e){selectEmail()}
+  function selectEmail(){const r=document.createRange();r.selectNodeContents(document.getElementById('email'));const s=getSelection();s.removeAllRanges();s.addRange(r);copy.textContent='Selected. Press ⌘C'}
+});
+</script>
+</body>
+</html>
